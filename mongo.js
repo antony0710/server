@@ -1,9 +1,11 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const cors = require('cors'); // Import cors module
 
 const app = express();
 
+app.use(cors()); // Use cors middleware
 // Replace with your MongoDB Atlas connection string
 const dbURI = 'mongodb+srv://cryjapan001:KLAYLH6oDdiTSi59@cluster0.pnrkilh.mongodb.net/';
 
