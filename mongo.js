@@ -21,7 +21,9 @@ const UserSchema = new mongoose.Schema({
 
 // Create a model from the schema
 const User = mongoose.model('User', UserSchema);
-
+app.get('/', async (req, res) => {
+    res.send('Hello World!');
+  });
 // Define routes for our REST API
 app.get('/users', async (req, res) => {
   const users = await User.find();
