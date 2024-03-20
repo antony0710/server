@@ -11,6 +11,6 @@
     "supertest": "^6.3.4"
   },
   "scripts": {
-    "start": "node mongo.js"
+    "start": "node server.js"
   }
 }
